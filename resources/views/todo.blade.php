@@ -12,6 +12,9 @@
 </head>
 <body>
 
+
+<a href="http://127.0.0.1:8000" class="font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500" wire:navigate="">Back</a>
+
 <div class="row justify-content-center mt-5">
     <div class="col-lg-6">
         @if(session()->has('success'))
