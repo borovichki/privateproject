@@ -13,7 +13,7 @@ class TodoController extends Controller
      */
     public function index()
     {
-        //
+        dd(auth()->user()->id);
         $todos=Todo::all();
         return view('todo',compact('todos'));
     }
