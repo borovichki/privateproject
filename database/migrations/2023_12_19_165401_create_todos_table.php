@@ -16,6 +16,8 @@ return new class extends Migration
             $table->longText('title');
             $table->boolean('is_completed')->default(0);
             $table->timestamps();
+            $table->integer('user_id')->unsigned()->index()->nullable();
+            $table->foreign('user_id')->references('id')->on('users')->ondelete('cascade');
         });
     }
 
